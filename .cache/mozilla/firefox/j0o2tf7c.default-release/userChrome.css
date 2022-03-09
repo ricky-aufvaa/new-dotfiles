@@ -1,0 +1,14 @@
+/* Changes the new tab favicon */
+.tabbrowser-tab[label^="New Tab"] .tab-icon-image {
+	list-style-image: none !important;
+	width: 0 !important;
+	padding-left: 16px !important;
+	background: url("firefox_with classic_blue_and_paw_48.png") !important; 
+	background-size: 16px 16px !important;
+	background-repeat: no-repeat !important;
+	}
+
+
+
+/* Centers bookmarks in the bookmark toolbar */
+#PlacesToolbarItems{ -moz-box-pack: center }

@@ -1,0 +1,13 @@
+[2022-03-06 15:55:49.935] [renderer1] [info] IExtensionHostStarter.start() took 885 ms.
+[2022-03-06 15:55:50.977] [renderer1] [error] [Extension Host] (node:3493) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `electron --trace-deprecation ...` to show where the warning was created)
+[2022-03-06 15:55:53.953] [renderer1] [error] [Extension Host] Error: Must invoke loadWASM first.
+    at new s (/usr/lib/code/node_modules.asar/vscode-oniguruma/release/main.js:1:1899)
+    at Object.createOnigString (/home/ricky/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.1.4/out/src/textMateLoader.js:53:48)
+    at e.createOnigString (/usr/lib/code/node_modules.asar/vscode-textmate/release/main.js:1:6869)
+    at e._tokenize (/usr/lib/code/node_modules.asar/vscode-textmate/release/main.js:1:9472)
+    at e.tokenizeLine2 (/usr/lib/code/node_modules.asar/vscode-textmate/release/main.js:1:8739)
+    at DocumentDecoration.tokenizeLine (/home/ricky/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.1.4/out/src/documentDecoration.js:232:55)
+    at DocumentDecoration.tokenizeDocument (/home/ricky/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.1.4/out/src/documentDecoration.js:116:38)
+    at DocumentDecorationManager.updateDocument (/home/ricky/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.1.4/out/src/documentDecorationManager.js:33:32)
+    at /home/ricky/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.1.4/out/src/documentDecorationManager.js:94:30

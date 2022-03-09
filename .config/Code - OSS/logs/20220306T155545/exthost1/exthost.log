@@ -1,0 +1,16 @@
+[2022-03-06 15:55:51.480] [exthost] [info] Extension host with pid 3493 started
+[2022-03-06 15:55:51.480] [exthost] [info] Skipping acquiring lock for /home/ricky/.config/Code - OSS/User/workspaceStorage/553643109be0b564eb53f28e823df808.
+[2022-03-06 15:55:52.238] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-03-06 15:55:52.299] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onLanguage:css'
+[2022-03-06 15:55:53.379] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-06 15:55:53.395] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-06 15:55:53.408] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2, startup: true, activationEvent: '*'
+[2022-03-06 15:55:53.558] [exthost] [info] ExtensionService#_doActivateExtension redwan-hossain.auto-rename-tag-clone, startup: true, activationEvent: '*'
+[2022-03-06 15:55:54.408] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-03-06 15:55:54.476] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-06 15:55:54.588] [exthost] [info] Eager extensions activated
+[2022-03-06 15:55:54.840] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-06 15:55:54.904] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-06 15:55:54.912] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-06 15:56:50.346] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-06 15:56:50.415] [exthost] [info] Extension host with pid 3493 exiting with code 0

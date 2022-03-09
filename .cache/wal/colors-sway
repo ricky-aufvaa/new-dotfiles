@@ -1,0 +1,21 @@
+set $wallpaper /home/ricky/repos/pictures/Wallpapers/purple_neon/3.jpg
+
+set $background #0B050F
+set $foreground #a5c3ef
+
+set $color0 #0B050F
+set $color1 #6C1994
+set $color2 #5B58DD
+set $color3 #9717AA
+set $color4 #A920CC
+set $color5 #E220E7
+set $color6 #C656E0
+set $color7 #a5c3ef
+set $color8 #7388a7
+set $color9 #6C1994
+set $color10 #5B58DD
+set $color11 #9717AA
+set $color12 #A920CC
+set $color13 #E220E7
+set $color14 #C656E0
+set $color15 #a5c3ef

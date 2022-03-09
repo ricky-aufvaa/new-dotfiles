@@ -1,0 +1,10 @@
+[2022-03-06T10:25:54.500Z] Validating found git in: git
+[2022-03-06T10:25:54.558Z] Using git 2.35.1 from git
+[2022-03-06T10:25:54.649Z] > git rev-parse --git-dir [4ms]
+[2022-03-06T10:25:54.665Z] Open repository: /home/ricky/VS code
+[2022-03-06T10:25:55.739Z] > git symbolic-ref --short HEAD [7ms]
+[2022-03-06T10:25:55.761Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main [13ms]
+[2022-03-06T10:25:55.802Z] > git remote --verbose [7ms]
+[2022-03-06T10:25:55.805Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [25ms]
+[2022-03-06T10:25:55.878Z] > git config --get commit.template [53ms]
+[2022-03-06T10:25:55.883Z] > git ls-files --stage -- /home/ricky/VS code/projects/Project3/style.css [10ms]

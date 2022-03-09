@@ -1,0 +1,13 @@
+[2022-03-02 13:11:13.277] [exthost] [info] Extension host with pid 3185 started
+[2022-03-02 13:11:13.507] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-02 13:11:13.520] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-02 13:11:13.529] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2, startup: true, activationEvent: '*'
+[2022-03-02 13:11:13.611] [exthost] [info] ExtensionService#_doActivateExtension redwan-hossain.auto-rename-tag-clone, startup: true, activationEvent: '*'
+[2022-03-02 13:11:14.361] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-03-02 13:11:14.457] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-02 13:11:14.559] [exthost] [info] Eager extensions activated
+[2022-03-02 13:11:14.671] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-02 13:11:14.709] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-02 13:11:14.723] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-02 13:11:15.422] [exthost] [info] extension host terminating: parent process 3071 does not exist anymore: kill ESRCH (code: ESRCH) (errno: -3)
+[2022-03-02 13:11:15.429] [exthost] [info] Extension host with pid 3185 exiting with code 0

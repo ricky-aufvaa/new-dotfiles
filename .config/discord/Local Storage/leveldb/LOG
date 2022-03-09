@@ -1,0 +1,6 @@
+2022/02/19-22:36:24.331 bd17 Reusing MANIFEST /home/ricky/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/02/19-22:36:24.331 bd17 Recovering log #4
+2022/02/19-22:36:24.331 bd17 Reusing old log /home/ricky/.config/discord/Local Storage/leveldb/000004.log 
+2022/02/20-01:21:31.585 be1f Level-0 table #8: started
+2022/02/20-01:21:31.593 be1f Level-0 table #8: 336561 bytes OK
+2022/02/20-01:21:31.595 be1f Delete type=0 #4

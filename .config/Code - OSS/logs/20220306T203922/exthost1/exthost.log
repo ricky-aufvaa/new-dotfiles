@@ -1,0 +1,7 @@
+[2022-03-06 20:39:27.301] [exthost] [info] Extension host with pid 6347 started
+[2022-03-06 20:39:27.559] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-06 20:39:27.572] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-06 20:39:27.589] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2, startup: true, activationEvent: '*'
+[2022-03-06 20:39:27.750] [exthost] [info] ExtensionService#_doActivateExtension redwan-hossain.auto-rename-tag-clone, startup: true, activationEvent: '*'
+[2022-03-06 20:39:27.845] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-06 20:39:27.850] [exthost] [info] Extension host with pid 6347 exiting with code 0

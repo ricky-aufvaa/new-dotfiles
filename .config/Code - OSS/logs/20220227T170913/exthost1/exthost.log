@@ -1,0 +1,20 @@
+[2022-02-27 17:09:20.373] [exthost] [info] Extension host with pid 26310 started
+[2022-02-27 17:09:20.373] [exthost] [info] Skipping acquiring lock for /home/ricky/.config/Code - OSS/User/workspaceStorage/1cc1aff61c7f2042a832dc612bea99ad.
+[2022-02-27 17:09:21.013] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-02-27 17:09:21.056] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onLanguage:css'
+[2022-02-27 17:09:21.969] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-02-27 17:09:21.976] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-02-27 17:09:21.985] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2, startup: true, activationEvent: '*'
+[2022-02-27 17:09:22.060] [exthost] [info] ExtensionService#_doActivateExtension redwan-hossain.auto-rename-tag-clone, startup: true, activationEvent: '*'
+[2022-02-27 17:09:22.972] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-02-27 17:09:23.017] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-02-27 17:09:23.158] [exthost] [info] Eager extensions activated
+[2022-02-27 17:09:23.298] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:09:23.325] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:09:23.336] [exthost] [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+[2022-02-27 17:09:36.389] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-02-27 17:09:36.396] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-02-27 17:09:36.436] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-02-27 17:09:49.976] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-02-28 02:03:30.077] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-02-28 02:03:30.149] [exthost] [info] Extension host with pid 26310 exiting with code 0

@@ -1,0 +1,45 @@
+[Added Associations]
+text/plain=vim.desktop;
+application/x-yaml=vim.desktop;code-oss.desktop;
+application/x-shellscript=nvim.desktop;code-oss.desktop;
+image/png=sxiv.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-7YCVG1.desktop;
+image/jpeg=sxiv.desktop;
+application/epub+zip=firefox.desktop;
+text/html=code-oss.desktop;
+image/gif=google-chrome.desktop;vlc.desktop;
+video/x-matroska=mpv.desktop;
+
+[Default Applications]
+x-scheme-handler/tg=userapp-Telegram Desktop-7YCVG1.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+video/mp4=vlc.desktop
+video/mpeg=vlc.desktop
+video/mp2t=vlc.desktop
+video/msvideo=vlc.desktop
+video/quicktime=vlc.desktop
+video/webm=vlc.desktop
+video/x-avi=vlc.desktop
+video/x-flv=vlc.desktop
+video/x-matroska=vlc.desktop
+video/x-mpeg=vlc.desktop
+video/x-ogm+ogg=vlc.desktop
+application/pdf=org.gnome.Evince.desktop
+inode/directory=thunar.desktop
+text/plain=code-oss.desktop
+audio/flac=mpv.desktop
+audio/x-flac=mpv.desktop
+audio/mpeg=mpv.desktop
+audio/x-mpegurl=mpv.desktop
+audio/x-scpls=mpv.desktop
+audio/x-vorbis+ogg=mpv.desktop
+audio/x-wav=mpv.desktop
+image/bmp=feh.desktop
+image/gif=feh.desktop
+image/jpeg=feh.desktop
+image/png=feh.desktop
+image/tiff=feh.desktop

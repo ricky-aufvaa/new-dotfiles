@@ -1,0 +1,19 @@
+@-moz-document url(about:privatebrowsing) {
+
+/* Changes the logo on the private browsing home screen */
+html.private .logo {
+	background-image: url("firefox_with_classic_blue_and_paw.png") !important;
+}
+
+}
+
+
+
+@-moz-document url(about:newtab), url(about:home), url(about:preferences), url("about:blank") {
+
+/* Changes the logo on the about:home screen */
+@-moz-document url(about:newtab), url(about:home) { 
+
+.logo {background-image: url("firefox_with_classic_blue_and_paw.png") !important;}
+
+}

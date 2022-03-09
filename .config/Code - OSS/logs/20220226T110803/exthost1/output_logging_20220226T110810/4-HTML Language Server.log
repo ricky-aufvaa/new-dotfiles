@@ -1,0 +1,24 @@
+[Error - 11:11:11 am] Error while computing completions for file:///home/ricky/VS%20code/projects/Project2/test/index.html: Range#create called with invalid arguments[[object Object], [object Object], undefined, undefined]
+Error: Range#create called with invalid arguments[[object Object], [object Object], undefined, undefined]
+    at Object.e.create (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:1218335)
+    at /usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:779732
+    at e.<anonymous> (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:779753)
+    at /usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:778614
+    at Object.next (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:778719)
+    at /usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:777655
+    at new Promise (<anonymous>)
+    at X (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:777400)
+    at e.computeCompletions (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:779083)
+    at e.<anonymous> (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:782872)
+[Error - 11:11:12 am] Error while computing completions for file:///home/ricky/VS%20code/projects/Project2/test/index.html: Range#create called with invalid arguments[[object Object], [object Object], undefined, undefined]
+Error: Range#create called with invalid arguments[[object Object], [object Object], undefined, undefined]
+    at Object.e.create (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:1218335)
+    at /usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:779732
+    at e.<anonymous> (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:779753)
+    at /usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:778614
+    at Object.next (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:778719)
+    at /usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:777655
+    at new Promise (<anonymous>)
+    at X (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:777400)
+    at e.computeCompletions (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:779083)
+    at e.<anonymous> (/usr/lib/code/extensions/html-language-features/server/dist/node/htmlServerMain.js:1:782872)

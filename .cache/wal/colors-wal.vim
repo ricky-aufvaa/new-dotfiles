@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/ricky/repos/pictures/Wallpapers/purple_neon/3.jpg"
+let background = "#0B050F"
+let foreground = "#a5c3ef"
+let cursor     = "#a5c3ef"
+
+" Colors
+let color0  = "#0B050F"
+let color1  = "#6C1994"
+let color2  = "#5B58DD"
+let color3  = "#9717AA"
+let color4  = "#A920CC"
+let color5  = "#E220E7"
+let color6  = "#C656E0"
+let color7  = "#a5c3ef"
+let color8  = "#7388a7"
+let color9  = "#6C1994"
+let color10 = "#5B58DD"
+let color11 = "#9717AA"
+let color12 = "#A920CC"
+let color13 = "#E220E7"
+let color14 = "#C656E0"
+let color15 = "#a5c3ef"

@@ -1,0 +1,185 @@
+
+                try {
+                    (function () {
+                        var util = {
+                            isValidGuid: function (val) {
+                                var validGUIDPattern = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+                                var isValid = val && validGUIDPattern.test(val.trim());
+                                return isValid;
+                            },
+                            warnIfInvalidToken: function (token) {
+                                var isTokenValid = util.isValidGuid(token);
+                                if (!isTokenValid) {
+                                    console.error('Token is not a valid GUID');
+                                }
+                                return isTokenValid;
+                            }
+                        };
+                        var TatariTagManager = /** @class */ (function () {
+                            function TatariTagManager(token) {
+                                this.debugCookieName = 'ttm-debug-cookie';
+                                this.debugCookieTime = 24 * 60 * 60 * 1000; // 1 day
+                                this.debug = false;
+                                this.util = util;
+                                this._i = token;
+                                this.checkDebugCookie(); // Debug before everything
+                            }
+                            TatariTagManager.prototype.enableDebug = function () {
+                                this.createCookie(this.debugCookieName, '1', this.debugCookieTime);
+                                this.debug = true;
+                                console.info('Debug: TTM Debug Enabled');
+                            };
+                            // handle multiple instantiations of the snippet
+                            TatariTagManager.prototype.init = function (token) {
+                                this._i = token;
+                                // emit console error if token is not valid GUID
+                                util.warnIfInvalidToken(token);
+                            };
+                            TatariTagManager.prototype.flushCommandQueue = function (commandQueue) {
+                                if (commandQueue === void 0) { commandQueue = []; }
+                                if (this.debug) {
+                                    console.info('Debug: flushing command queue', commandQueue);
+                                }
+                                if (commandQueue.length > 0) {
+                                    var that_1 = this;
+                                    commandQueue.forEach(function (m) {
+                                        that_1[m[0]].apply(that_1, m.slice(1, m.length));
+                                    });
+                                }
+                            };
+                            TatariTagManager.prototype.onPageview = function () {
+                                if (this.debug) {
+                                    console.info('Debug: onPageview triggered');
+                                }
+                                // custom stuff you want to do on pageview
+
+// hook for TTM on pageview
+if (window['TatariXandr'] && window['TatariXandr'].event) {
+    window['TatariXandr'].event('PageView');
+}
+else {
+    pixie('event', 'PageView');
+}
+
+                            };
+                            TatariTagManager.prototype.onTrack = function (event, arg) {
+                                if (this.debug) {
+                                    console.info('Debug: onTrack triggered', event, arg);
+                                }
+                                // custom stuff you want to do on track being fired
+
+// hook for TTM on track
+if (window['TatariXandr'] && window['TatariXandr'].event) {
+    window['TatariXandr'].event(event);
+}
+else {
+    // Xandr doesn't accept events with spaces or hyphens
+    pixie('event', event.replace(/-|\s/g, ''));
+}
+
+                            };
+                            TatariTagManager.prototype.onIdentify = function (id) {
+                                if (this.debug) {
+                                    console.info('Debug: onIdentify triggered', id);
+                                }
+                                // custom stuff to do on identify
+
+                            };
+                            TatariTagManager.prototype.createCookie = function (cookieName, cookieValue, cookieExp) {
+                                var exp = '';
+                                var date = new Date();
+                                var domain = "domain=" + this.getDomain() + ";";
+                                date.setTime(date.getTime() + cookieExp);
+                                exp = "expires=" + date.toUTCString() + ";";
+                                document.cookie = cookieName + "=" + cookieValue + "; " + exp + " " + domain + " path=/";
+                                return cookieValue;
+                            };
+                            TatariTagManager.prototype.getDomain = function () {
+                                var testCookieName = 'testTLD';
+                                var testCookie = testCookieName + "=test";
+                                var loc = document.location || { hostname: '' };
+                                var hostnames = loc.hostname.split('.');
+                                var domain = '';
+                                hostnames.some(function (_, i) {
+                                    var testDomain = hostnames.slice(hostnames.length - i - 1).join('.');
+                                    document.cookie = testCookie + ";domain=" + testDomain + ";";
+                                    if (document.cookie.indexOf(testCookie) !== -1) {
+                                        // found tld, remove cookie
+                                        domain = testDomain;
+                                        document.cookie = testCookieName + "=;domain=" + domain + ";expires=" + (new Date(0)).toUTCString() + ";";
+                                        return true;
+                                    }
+                                });
+                                return domain;
+                            };
+                            TatariTagManager.prototype.getCookie = function (cookieName) {
+                                var name = cookieName + "=";
+                                var decodedCookie = decodeURIComponent(document.cookie);
+                                var ca = decodedCookie.split(';');
+                                for (var _a = 0, ca_1 = ca; _a < ca_1.length; _a++) {
+                                    var c = ca_1[_a];
+                                    while (c.charAt(0) === ' ') {
+                                        c = c.substring(1);
+                                    }
+                                    if (c.indexOf(name) === 0) {
+                                        return c.substring(name.length, c.length);
+                                    }
+                                }
+                                return;
+                            };
+                            TatariTagManager.prototype.removeCookie = function (cookieName) {
+                                var domain = this.getDomain();
+                                // delete cookie which doesn't specify domain
+                                document.cookie = cookieName + "=; Max-Age=-99999999;";
+                                // delete cookie which does specify domain
+                                if (domain) {
+                                    document.cookie = cookieName + "=; Max-Age=-99999999; domain=" + domain + ";";
+                                }
+                            };
+                            TatariTagManager.prototype.checkDebugCookie = function () {
+                                var val = this.getCookie(this.debugCookieName);
+                                this.debug = val ? true : false;
+                            };
+                            return TatariTagManager;
+                        }());
+                        // Using tracker before real script is initialized
+                        var mockTagManager = window['ttm'] || [];
+                        // Here we replace the mock ttm with the real one
+                        var realTagManager = new TatariTagManager(mockTagManager['_i']);
+                        window['ttm'] = realTagManager;
+                        realTagManager.flushCommandQueue(mockTagManager);
+                    })();
+                }
+                catch (e) {
+                    console.log(e);
+                }
+ÊÐrY#Ë      b$M£b$M£DÀòb-L   •    O^partitionKey=%28https%2Cwebflow.com%29,:https://d2hrivdxn8ekm8.cloudfront.net/tag-manager/d630b21c-157d-42d8-99b3-c39efdccca56-additional-latest.js strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+content-type: application/javascript
+content-length: 8766
+last-modified: Mon, 13 Sep 2021 20:09:29 GMT
+x-amz-version-id: n5LUvWtjrKgTUszwUNoI8AdvUE648p56
+accept-ranges: bytes
+server: AmazonS3
+date: Sun, 06 Mar 2022 02:07:12 GMT
+etag: "a839c745599e2aaac92e61d1876bcb92"
+x-cache: Hit from cloudfront
+via: 1.1 b193b00c3c9f9946dd90804b28abdff8.cloudfront.net (CloudFront)
+x-amz-cf-pop: CCU50-C2
+x-amz-cf-id: cqUCnqvnCenLDOUbdpwGg1Vw7-eJJUhYoKzQXvZTUkQJePP0hYE-YQ==
+age: 15234
+X-Firefox-Spdy: h2
+ original-response-headers content-type: application/javascript
+content-length: 8766
+last-modified: Mon, 13 Sep 2021 20:09:29 GMT
+x-amz-version-id: n5LUvWtjrKgTUszwUNoI8AdvUE648p56
+accept-ranges: bytes
+server: AmazonS3
+date: Sun, 06 Mar 2022 02:07:12 GMT
+etag: "a839c745599e2aaac92e61d1876bcb92"
+x-cache: Hit from cloudfront
+via: 1.1 b193b00c3c9f9946dd90804b28abdff8.cloudfront.net (CloudFront)
+x-amz-cf-pop: CCU50-C2
+x-amz-cf-id: cqUCnqvnCenLDOUbdpwGg1Vw7-eJJUhYoKzQXvZTUkQJePP0hYE-YQ==
+age: 15234
+X-Firefox-Spdy: h2
+ ctid 2 uncompressed-len 0 net-response-time-onstart 124 net-response-time-onstop 139   ">

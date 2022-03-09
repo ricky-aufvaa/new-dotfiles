@@ -1,0 +1,33 @@
+file:///home/ricky/VS%20code/cpp/Web%20dev/tut61.html {"mtime":1644812285949,"ctime":1644812285949,"size":0,"etag":"38a63p5ol0","orphaned":false,"typeId":""}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">This is my container</div>
+    <script>
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi" //#bhindiLoverSquad
+        } 
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace('Harry', 'Larry');
+        console.log(myJsonStr)
+
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj)
+
+        
+
+
+    </script>
+</body>
+</html>

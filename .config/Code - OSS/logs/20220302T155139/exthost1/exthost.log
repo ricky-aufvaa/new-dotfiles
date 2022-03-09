@@ -1,0 +1,9 @@
+[2022-03-02 15:51:44.142] [exthost] [info] Extension host with pid 13161 started
+[2022-03-02 15:51:44.746] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-03-02 15:51:44.817] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onLanguage:css'
+[2022-03-02 15:51:45.627] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-02 15:51:45.631] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-02 15:51:45.634] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2, startup: true, activationEvent: '*'
+[2022-03-02 15:51:45.657] [exthost] [info] ExtensionService#_doActivateExtension redwan-hossain.auto-rename-tag-clone, startup: true, activationEvent: '*'
+[2022-03-02 15:51:45.681] [exthost] [info] extension host terminating: parent process 13122 does not exist anymore: kill ESRCH (code: ESRCH) (errno: -3)
+[2022-03-02 15:51:45.682] [exthost] [info] Extension host with pid 13161 exiting with code 0

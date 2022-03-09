@@ -1,0 +1,68 @@
+#!/bin/sh
+echo "Enter date of the episode"
+read date
+#date=$(name)
+echo "Enter episode number"
+read episode
+#episode=$()
+
+if [[ "$episode" -lt 11 ]] && [[ "$date" -eq 1 ]]
+then
+url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"st"-december-2022-episode-$episode-video/)
+
+
+
+elif [[ "$episode" -lt 11 ]] && [[ "$date" -eq 2 ]]
+then
+url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"nd"-december-2022-episode-$episode-video/)
+
+elif [[ "$episode" -lt 11 ]] && [[ "$date" -eq 3 ]]
+then
+url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"rd"-december-2022-episode-$episode-video/)
+
+elif [[ "$episode" -lt 11 ]] 
+then
+url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"th"-december-2022-episode-$episode-video/)
+
+
+
+elif [[ "$episode" -gt 10 ]] && [[ "$episode" -lt 32 ]]
+then
+
+		url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"th"-january-2022-episode-$episode-video/)
+
+
+elif [[ "$episode" -gt 32 ]] && [[ "date" -eq 1 ]]
+	then
+		url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"st"-february-2022-episode-$episode-video/)
+
+elif [[ "$episode" -gt 32 ]] && [[ "date" -eq 2 ]]
+	then
+		url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"nd"-february-2022-episode-$episode-video/)
+
+elif [[ "$episode" -gt 32 ]] && [[ "date" -eq 3 ]]
+then
+	url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"rd"-february-2022-episode-$episode-video/)
+
+elif [[ "$episode" -gt 32 ]]
+then
+url=$(curl -o tmp https://saathnibhaanasaathiya.com/shark-tank-india-$date"th"-february-2022-episode-$episode-video/)
+fi
+
+part1=$(cat tmp |grep -E "rr[0-9]{1}" |awk '{print $2}'|sed '/https/ i \\'|sed "s/'/ /g" |awk '{print $1}'|sed -n '2,3p')  
+part2=$(cat tmp |grep -E "rr[0-9]{1}" |awk '{print $2}'|sed '/https/ i \\'|sed "s/'/ /g" |awk '{print $1}'|sed -n '4,5p')  
+part3=$(cat tmp |grep -E "rr[0-9]{1}" |awk '{print $2}'|sed '/https/ i \\'|sed "s/'/ /g" |awk '{print $1}'|sed -n '6,7p')  
+part4=$(cat tmp |grep -E "rr[0-9]{1}" |awk '{print $2}'|sed '/https/ i \\'|sed "s/'/ /g" |awk '{print $1}'|sed -n '8,9p')  
+part5=$(cat tmp |grep -E "rr[0-9]{1}" |awk '{print $2}'|sed '/https/ i \\'|sed "s/'/ /g" |awk '{print $1}'|sed -n '10,11p')  
+#(cat tmp|grep rr[0-9]{1} |cut -b 8-|rev|cut -b 3-|rev)
+#echo $video1
+#video2=$(cat tmp|grep rr2|cut -b 8-|rev|cut -b 3-|rev)
+
+
+vlc $part1 $part2 $part3 $part4 $part5
+
+#mpv $part1
+#mpv $part2
+#mpv $part3
+#mpv $part4
+#mpv $part5

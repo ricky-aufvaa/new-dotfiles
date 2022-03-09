@@ -1,0 +1,21 @@
+[ExtractDialog]
+DirHistory[$e]=$HOME/Downloads/Telegram Desktop/,$HOME/Downloads/Don Hertzfeldt Short Films Collection (1997-2015) (1080p BluRay x265 HEVC 10bit AAC 2.0 afm72)/,$HOME/Downloads/,$HOME/Downloads/Firefox.Halo.v5.1.0(1)/,$HOME/Downloads/Firefox-Halo-v.5.1.0/,$HOME/Downloads/firefox/chrome/,$HOME/Downloads/firefox css/
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME,file:$HOME/Downloads/Don Hertzfeldt Short Films Collection (1997-2015) (1080p BluRay x265 HEVC 10bit AAC 2.0 afm72)
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/,file:$HOME/Downloads/Firefox.Halo.v5.1.0(1)/,file:$HOME/Downloads/Don Hertzfeldt Short Films Collection (1997-2015) (1080p BluRay x265 HEVC 10bit AAC 2.0 afm72)/,file:$HOME/Downloads/Telegram Desktop/
+detailViewIconSize=16
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAABVYAAAKzAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+eDP-1 Height 1366x768=339
+eDP-1 Width 1366x768=666
+eDP-1 XPosition 1366x768=689
+eDP-1 YPosition 1366x768=418
+eDP1 Height 1366x768=745
+eDP1 Width 1366x768=1366
+eDP1 XPosition 1366x768=0
+eDP1 YPosition 1366x768=23
+splitterSizes=905,457
